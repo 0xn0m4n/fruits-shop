@@ -28,20 +28,36 @@
         <!-- menu -->
 
         
-        <div class="flex gap-5 p-5">
+        <div class="order-2 md:order-1">
+          <div class="md:inline-block hidden lg:flex gap-5 p-5">
             <a href="#">Home</a>
             <a href="">About Us</a>
             <a href="">Shop</a>
             <a href="">Fruits</a>
         </div>
+        <div class="lg:hidden ">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost btn-circle">
+              <i class="fa-solid fa-bars text-2xl"></i>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-[100px]">
+            <a href="#">Home</a>
+            <a href="">About Us</a>
+            <a href="">Shop</a>
+            <a href="">Fruits</a>
+            </ul>
+          </div>
+        </div>
+        </div>
+       
         <!-- logo -->
-        <div class="flex items-center gap-3">
+        <div class="order-1 md:order-2 flex items-center gap-3">
             <img src="images/logo.png" alt="">
             <h1 class="text-3xl">Fruits Shop</h1>
         </div>
         <!-- search -->
-        <div >
-          <i class="absolute ml-6 fa-solid fa-magnifying-glass fa-xl"></i>
+        <div class="md:inline-block hidden order-4">
+          <i class="absolute ml-40 top-8 fa-solid fa-magnifying-glass fa-xl"></i>
           <input type="text" placeholder="Search here "  class="p-3 rounded-full" />
           
         </div>
